@@ -1,0 +1,122 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+ <title>Ordem de Serviço</title>
+
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+
+        <style> 
+          
+            body{
+            
+                text-align: left;
+
+            }
+            .row{
+                text-align: left;
+
+            }
+
+            .container{
+                display: flex;
+                margin: 10px;
+            }
+            .container > div{
+                display: flex;
+            }
+            form{
+                width: fit-content;
+                max-width: 1000px;
+                margin: 0 auto;
+            }
+            
+            .geral{
+                width: 50%;
+            }
+            input{
+                border: none;
+                border-bottom: 1px solid black;
+                width: 100%;
+
+            }
+            input:focus{
+                outline: none;
+            }
+            textarea{
+                width: 100%;
+            }
+            #botao{
+                margin-top: 15px;
+            }
+            
+
+        </style>
+    </head>
+    <body>
+  
+
+        <form id="formulario" name="formulario" method="post" action="ordem.php">
+
+ <font face="arial" color="">           <legend>Dados Necessários:</legend>
+            <br/><br/>
+            <div class="container">
+                <div class="geral"><label>Cliente:</label> <input id="pe" name="pe" autocomplete="off"/></div>
+                <div class="geral"><label>Celular:</label><input  id="tel" name="tel" autocomplete="off"/></div>
+            </div>
+            <br/>
+            <div class="container">
+                <div class="geral"><label>Endereço:</label><input id="log" name="log" autocomplete="off"/></div>
+                <div class="geral"><label>CPF:</label><input  id="cpf" name="cpf" autocomplete="off"/></div>
+                            </div>
+                            <br/> <br/>
+                            <div class="container">
+                                <div class="geral"><label>Marca do Carro:</label><input  id="marca" name="marca" autocomplete="off"/></div>
+                                <div class="geral"><label>Placa:</label><input  id="placa" name="placa" autocomplete="off"/></div>
+                            </div>
+                            <br/>
+                            <div class="container">
+                                <div class="geral"><label>Modelo:</label><input  id="mdl" name="mdl" autocomplete="off"/></div>
+                                <br/>
+                                <div class="geral"><label>Ano de Fabricação:</label><input  id="ano" name="ano" autocomplete="off"/></div>
+                            </div>
+
+                            <br/> <br/> <br/>
+
+
+                           
+
+                            <fieldset> 
+                                <legend>Serviços Necessários: </legend>
+                                <textarea id="servicos" name="servicos" rows="5" cols="50">
+
+                                </textarea>
+                            </fieldset>
+                            <br/><br/>
+
+                            <fieldset>
+                                <legend>Peças Necessárias:</legend>   
+                                <textarea id="pecas" name="pecas" rows="5" cols="50">
+
+                                </textarea>
+                            </fieldset>
+                            <br/>
+
+                            <div class="container">
+                                <div class="geral"><label><mark>TOTAL A SER PAGO:</mark></label><input id="preco" name="preco" autocomplete="off"/></div>
+                                <div class="geral"><label>Assinatura:</label><input id="assi" name="assi" autocomplete="off"/></div>
+                                
+                            </div>
+                            <div>
+                            
+                                    <input id="botao" type="submit" value="Enviar" />
+                                    
+                              
+                            </div>
+                            <br/>
+                  <font/>
+                                </form>
+
+
+
+                            </body>
+                            </html>
